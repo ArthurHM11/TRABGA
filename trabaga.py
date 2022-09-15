@@ -19,7 +19,7 @@
 # 5. Maior compra: Mostra o nome do cliente, o valor total da compra e uma tabela com os itens
 # comprados, exibindo quantidade comprada de cada produto e valor total por item.
 # 6. Sair: Encerra o programa.
-alo alo alo
+alo alo alo salve pq nn vai:
 
 # Código Descrição Estoque Valor
 # 1 Calça 20 R$ 112,00
@@ -32,7 +32,7 @@ alo alo alo
 # 8 Tênis 8 R$ 183,00
 # 9 Bota 3 R$ 219,90
 
-print('alo')
+
 import os
 
 cod1 = 0
