@@ -4,7 +4,6 @@
 # estrutura de repetição, pede para o usuário informar  o código  do  produto  e a quantidade
 # desejada.   Caso   não   exista   o   código   do   produto   ou   não   tenha   quantidade   suficiente   em
 # estoque,   deve   exibir   uma   mensagem   e   não   registrar   a   compra   do   item.   Do   contrário,   o
-
 # sistema calcula e exibe o valor total do item, perguntando se quer confirmar a compra. O
 # usuário pode confirmar ou cancelar o item. Se confirmar, deve dar baixa no estoque conforme
 # quantidade comprada. Se o usuário digitar zero como código do produto, significa o fim da
