@@ -19,7 +19,7 @@
 # 5. Maior compra: Mostra o nome do cliente, o valor total da compra e uma tabela com os itens
 # comprados, exibindo quantidade comprada de cada produto e valor total por item.
 # 6. Sair: Encerra o programa.
-alo alo alo salve pq nn vai:
+alo alo alo salve
 
 # Código Descrição Estoque Valor
 # 1 Calça 20 R$ 112,00
