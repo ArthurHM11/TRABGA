@@ -32,7 +32,7 @@
 # 8 Tênis 8 R$ 183,00
 # 9 Bota 3 R$ 219,90
 
-
+print('alo')
 import os
 
 cod1 = 0
