@@ -38,15 +38,6 @@ import os
 
 valorvenda = 0
 
-# cod1 = ('Calça')
-# cod2 = ('Camisa')
-# cod3 = ('Bermuda')
-# cod4 = ('Saia')
-# cod5 = ('Blusa')
-# cod6 = ('Moletom')
-# cod7 = ('Meia')
-# cod8 = ('Tênis')
-# cod9 = ('Bota')
 
 cod1p = 112.00
 cod2p = 95.00
