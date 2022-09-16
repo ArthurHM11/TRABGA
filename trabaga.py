@@ -20,6 +20,7 @@
 # comprados, exibindo quantidade comprada de cada produto e valor total por item.
 # 6. Sair: Encerra o programa.
 
+
 # Código Descrição Estoque Valor
 # 1 Calça 20 R$ 112,00
 # 2 Camisa 18 R$ 95,00
@@ -31,18 +32,73 @@
 # 8 Tênis 8 R$ 183,00
 # 9 Bota 3 R$ 219,90
 
+
 import os
 
-cod1 = 0
-cod2 = 0
-cod3 = 0
-cod4 = 0
-cod5 = 0
-cod6 = 0
-cod7 = 0
-cod8 = 0
-cod9 = 0
+valorvenda = 0
+
+# cod1 = ('Calça')
+# cod2 = ('Camisa')
+# cod3 = ('Bermuda')
+# cod4 = ('Saia')
+# cod5 = ('Blusa')
+# cod6 = ('Moletom')
+# cod7 = ('Meia')
+# cod8 = ('Tênis')
+# cod9 = ('Bota')
+
+cod1p = 112.00
+cod2p = 95.00
+cod3p = 49.00
+cod4p = 169.00
+cod5p = 120.00
+cod6p = 135.00
+cod7p = 12.99
+cod8p = 183.00
+cod9p = 219.00
+
+# global cod1
+# global cod2
+# global cod3
+# global cod4
+# global cod5
+# global cod6
+# global cod7
+# global cod8
+# global cod9
+
+# global cod1p
+# global cod2p
+# global cod3p
+# global cod4p
+# global cod5p
+# global cod6p
+# global cod7p
+# global cod8p
+# global cod9p
+
+est1 = 20
+est2 = 18
+est3 = 23
+est4 = 12
+est5 = 9
+est6 = 4
+est7 = 17
+est8 = 8
+est9 = 3
+
+# global est1
+# global est2
+# global est3
+# global est4
+# global est5
+# global est6
+# global est7
+# global est8
+# global est9
+
 print('inicializando sistema...')
+nome = input('Boa noite.\nPor favor, insira seu nome: ')
 
 def menu():
   os.system('cls' if os.name == 'nt' else 'clear') # Limpa a tela - Win/Linux
@@ -59,16 +115,67 @@ def menu():
 # Uma função para cada item do menu
 def opcao_1():
   print('\nOpção escolhida: 1\n')
+  nomec = input('Nome do Cliente: ')
   print('O que será comprado?')
-  print('# Código Produto Estoque Valor\n1 Calça 20 R$ 112,00\n2 Camisa 18 R$ 95,00\n3 Bermuda 23 R$ 49,90\n4 Saia 12 R$ 169,00\n5 Blusa 9 R$ 120,00\n6 Moletom 4 R$ 135,00\n7 Meia 17 R$ 12,99\n8 Tênis 8 R$ 183,00\n9 Bota 3 R$ 219,90\n')
+  print('Código Produto Estoque Valor\n1 Calça 20 R$ 112,00\n2 Camisa 18 R$ 95,00\n3 Bermuda 23 R$ 49,90\n4 Saia 12 R$ 169,00\n5 Blusa 9 R$ 120,00\n6 Moletom 4 R$ 135,00\n7 Meia 17 R$ 12,99\n8 Tênis 8 R$ 183,00\n9 Bota 3 R$ 219,90\n')
+  codv1 = 0
+  codv2 = 0
+  codv3 = 0
+  codv4 = 0
+  codv5 = 0
+  codv6 = 0
+  codv7 = 0
+  codv8 = 0
+  codv9 = 0
+  vvenda = 0
+  codp = input('Insira o código do produto: ')
+  while(codp != '10'):
+    if codp == '1':
+      vvenda += cod1p
+      codv1 += 1
+    elif codp == '2':
+      vvenda += cod2p
+      codv2 += 1
+    elif codp == '3':
+      vvenda += cod3p
+      codv3 += 1
+    elif codp == '4':
+      vvenda += cod4p
+      codv4 += 1
+    elif codp == '5':
+      vvenda += cod5p
+      codv5 += 1
+    elif codp == '6':
+      vvenda += cod6p
+      codv6 += 1
+    elif codp == '7':
+      vvenda += cod7p
+      codv7 += 1
+    elif codp == '8':
+      vvenda += cod8p
+      codv8 += 1
+    elif codp == '9':
+      vvenda += cod9p
+      codv9 += 1
+    elif codp == '10':
+      print('\nSaindo...\n')
+    else:
+      print('\nOpção desconhecida!\n')
+    input('Pressione ENTER para continuar')
+  compratotal = print('Total da venda:\nCliente: {}\nValor Total R${:.2f}'.format(nomec,vvenda))
+  return compratotal
+
+
 def opcao_2():
   print('\nOpção escolhida: 2\n')
 def opcao_3():
   print('\nOpção escolhida: 3\n')
 def opcao_4():
-  print('\nOpção escolhida: 3\n')
+  print('\nOpção escolhida: 4\n')
 def opcao_5():
-  print('\nOpção escolhida: 3\n')
+  print('\nOpção escolhida: 5\n')
+
+
 
   # Processamento do menu e chamada das funções
 escolha = '0'
@@ -80,6 +187,10 @@ while(escolha != '9'):
     opcao_2()
   elif escolha == '3':
     opcao_3()
+  elif escolha == '3':
+    opcao_4()
+  elif escolha == '3':
+    opcao_5()
   elif escolha == '9':
     print('\nSaindo...\n')
   else:
