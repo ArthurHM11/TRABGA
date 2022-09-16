@@ -61,7 +61,7 @@ est8 = 8
 est9 = 3
 
 
-print('inicializando sistema...')
+print('Inicializando sistema...')
 nome = input('Boa noite.\nPor favor, insira seu nome: ')
 
 def menu():
@@ -120,7 +120,7 @@ def opcao_1():
         est1 -= 1
         print('Uma Calça de R$112,00 foi comprada.')
       else:
-        print('não há produtos em estoque o suficiente.')
+        print('Não há produtos em estoque o suficiente.')
     elif codp == '2':
       if est2 > 0:
         vvenda += cod2p
@@ -128,7 +128,7 @@ def opcao_1():
         est2 -= 1
         print('Uma Camisa de R$95,00 foi comprada.')
       else:
-        print('não há produtos em estoque o suficiente.')
+        print('Não há produtos em estoque o suficiente.')
     elif codp == '3':
       if est3 > 0:
         vvenda += cod3p
@@ -136,7 +136,7 @@ def opcao_1():
         est3 -= 1
         print('Uma Bermuda de R$49,90 foi comprada.')
       else:
-        print('não há produtos em estoque o suficiente.')
+        print('Não há produtos em estoque o suficiente.')
     elif codp == '4':
       if est4 > 0:
         vvenda += cod4p
@@ -144,7 +144,7 @@ def opcao_1():
         est4 -= 1
         print('Uma Saia de R$169,00 foi comprada.')
       else:
-        print('não há produtos em estoque o suficiente.')
+        print('Não há produtos em estoque o suficiente.')
     elif codp == '5':
       if est5 > 0:
         vvenda += cod5p
@@ -152,13 +152,13 @@ def opcao_1():
         est5 -= 1
         print('Uma Blusa de R$120,00 foi comprada.')
       else:
-        print('não há produtos em estoque o suficiente.')
+        print('Não há produtos em estoque o suficiente.')
     elif codp == '6':
       if est6 > 0:
         vvenda += cod6p
         codv6 += 1
         est6 -= 1
-        print('Um Moletom de R$135,00 foi comprada.')
+        print('Um Moletom de R$135,00 foi comprado.')
       else:
         print('não há produtos em estoque o suficiente.')
     elif codp == '7':
@@ -184,7 +184,7 @@ def opcao_1():
         est9 -= 1
         print('Uma Bota de R$219,00 foi comprada.')
       else:
-        print('não há produtos em estoque o suficiente.')
+        print('Não há produtos em estoque o suficiente.')
     elif codp == '10':
       print('\nFinalizando Compra...\n')
     else:
