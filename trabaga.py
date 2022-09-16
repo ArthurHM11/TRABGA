@@ -20,7 +20,6 @@
 # comprados, exibindo quantidade comprada de cada produto e valor total por item.
 # 6. Sair: Encerra o programa.
 
-
 # Código Descrição Estoque Valor
 # 1 Calça 20 R$ 112,00
 # 2 Camisa 18 R$ 95,00
@@ -31,7 +30,6 @@
 # 7 Meia 17 R$ 12,99
 # 8 Tênis 8 R$ 183,00
 # 9 Bota 3 R$ 219,90
-
 
 import os
 
@@ -71,8 +69,6 @@ def opcao_4():
   print('\nOpção escolhida: 3\n')
 def opcao_5():
   print('\nOpção escolhida: 3\n')
-
-
 
   # Processamento do menu e chamada das funções
 escolha = '0'
