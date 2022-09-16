@@ -113,7 +113,7 @@ def menu():
   return item
 
 # Uma função para cada item do menu
-def opcao_1():
+def opcao_1(est1,est2,est3,est4,est5,est6,est7,est8,est9):
   print('\nOpção escolhida: 1\n')
   nomec = input('Nome do Cliente: ')
   print('O que será comprado?')
@@ -128,61 +128,85 @@ def opcao_1():
   codv8 = 0
   codv9 = 0
   vvenda = 0
+
   codp = input('Insira o código do produto: ')
   while(codp != '10'):
     if codp == '1':
       vvenda += cod1p
       codv1 += 1
+      est1 -= 1
+      print('Uma Calça de R$112,00 foi comprada.')
     elif codp == '2':
       vvenda += cod2p
       codv2 += 1
+      est2 -= 1
+      print('Uma Camisa de R$95,00 foi comprada.')
     elif codp == '3':
       vvenda += cod3p
       codv3 += 1
+      est3 -= 1
+      print('Uma Bermuda de R$49,90 foi comprada.')
     elif codp == '4':
       vvenda += cod4p
       codv4 += 1
+      est4 -= 1
+      print('Uma Saia de R$169,00 foi comprada.')
     elif codp == '5':
       vvenda += cod5p
       codv5 += 1
+      est5 -= 1
+      print('Uma Blusa de R$120,00 foi comprada.')
     elif codp == '6':
       vvenda += cod6p
       codv6 += 1
+      est6 -= 1
+      print('Um Moletom de R$135,00 foi comprada.')
     elif codp == '7':
       vvenda += cod7p
       codv7 += 1
+      est7 -= 1
+      print('Uma Meia de R$12,99 foi comprada.')
     elif codp == '8':
       vvenda += cod8p
       codv8 += 1
+      est8 -= 1
+      print('Um Tenis de R$183,00 foi comprado.')
     elif codp == '9':
       vvenda += cod9p
       codv9 += 1
+      est9 -= 1
+      print('Uma Bota de R$219,00 foi comprada.')
     elif codp == '10':
       print('\nSaindo...\n')
     else:
       print('\nOpção desconhecida!\n')
-    input('Pressione ENTER para continuar')
   compratotal = print('Total da venda:\nCliente: {}\nValor Total R${:.2f}'.format(nomec,vvenda))
   return compratotal
 
 
 def opcao_2():
   print('\nOpção escolhida: 2\n')
+
+
 def opcao_3():
   print('\nOpção escolhida: 3\n')
+
+
 def opcao_4():
   print('\nOpção escolhida: 4\n')
+
+
 def opcao_5():
   print('\nOpção escolhida: 5\n')
 
 
 
-  # Processamento do menu e chamada das funções
+# Processamento do menu e chamada das funções
 escolha = '0'
 while(escolha != '9'):
   escolha = menu()
   if escolha == '1':
-    opcao_1()
+    opcao_1(est1,est2,est3,est4,est5,est6,est7,est8,est9)
   elif escolha == '2':
     opcao_2()
   elif escolha == '3':
