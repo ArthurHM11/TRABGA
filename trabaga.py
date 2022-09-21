@@ -160,7 +160,7 @@ def opcao_1():
         est6 -= 1
         print('Um Moletom de R$135,00 foi comprado.')
       else:
-        print('não há produtos em estoque o suficiente.')
+        print('Não há produtos em estoque o suficiente.')
     elif codp == '7':
       if est7 > 0:
         vvenda += cod7p
@@ -168,7 +168,7 @@ def opcao_1():
         est7 -= 1
         print('Uma Meia de R$12,99 foi comprada.')
       else:
-        print('não há produtos em estoque o suficiente.')
+        print('Não há produtos em estoque o suficiente.')
     elif codp == '8':
       if est8 > 0:
         vvenda += cod8p
@@ -176,7 +176,7 @@ def opcao_1():
         est8 -= 1
         print('Um Tenis de R$183,00 foi comprado.')
       else:
-        print('não há produtos em estoque o suficiente.')
+        print('Não há produtos em estoque o suficiente.')
     elif codp == '9':
       if est9 > 0:
         vvenda += cod9p
