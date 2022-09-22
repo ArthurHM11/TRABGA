@@ -228,54 +228,54 @@ def opcao_2():
   while(codr!='10'):
     codr= input('\nInsira o código de produto :\n')
     if codr=='1':
-      n1=int(input('Informe a quantidade a ser reposta:\n '))
+      n1=int(input('Informe a quantidade a ser reposta: '))
       code1+=n1
       print('{} calças foram repostas.'.format(n1))
       est1+=n1
     elif(codr=='2'):
-      n2=int(input('Informe a quantidade a ser reposta:\n '))
+      n2=int(input('Informe a quantidade a ser reposta: '))
       code2+=n2
       print('{} camisas foram repostas.'.format(n2))
       est2+=n2
     elif(codr=='3'):
-      n3=int(input('Informe a quantidade a ser reposta:\n'))
+      n3=int(input('Informe a quantidade a ser reposta:'))
       code3+=n3
       print('{} bermudas foram repostas.'.format(n3))
       est3+=n3
     elif(codr=='4'):
-      n4=int(input('Informe a quantidade a ser reposta:\n'))
+      n4=int(input('Informe a quantidade a ser reposta:'))
       code4+=n4
       print('{} saias foram repostas.'.format(n4))
       est4+=n4
     elif(codr=='5'):
-      n5=int(input('Informe a quantidade a ser reposta:\n'))
+      n5=int(input('Informe a quantidade a ser reposta:'))
       code5+=n5
       print('{} blusas foram repostas.'.format(n5))
       est5+=n5
     elif(codr=='6'):
-      n6=int(input('Informe a quantia a ser reposta:\n'))
+      n6=int(input('Informe a quantia a ser reposta:'))
       code6+=n6
       print('{} moletons foram repostos.'.format(n6))
       est6+=n6
     elif(codr=='7'):
-      n7=int(input('Informe a quantia a ser reposta\n'))
+      n7=int(input('Informe a quantia a ser reposta:'))
       code7+=n7
       print('{} meias foram repostas.'.format(n7))
       est7+=n7
     elif(codr=='8'):
-      n8=int(input('\nInforme a quantidade a ser reposta:\n'))
+      n8=int(input('Informe a quantidade a ser reposta:'))
       code8+=n8
       print('{} tênis foram repostos.'.format(n8))
       est8+=n8
     elif(codr=='9'):
-      n9=int(input('Informe a quantia a ser reposta:\n'))
+      n9=int(input('Informe a quantia a ser reposta:'))
       code9+n9
       print('{} botas foram repostas.'.format(n9))
       est9+=n9
     elif(codr=='10'):
-      print('\nFinalizando estoque...\n')  
+      print('Finalizando estoque...')  
     else:
-      print('\nO código de produto não existe.\n')
+      print('O código de produto não existe.')
   estoquetotal=print('O estoque foi resposto com sucesso.')
   return estoquetotal
     
