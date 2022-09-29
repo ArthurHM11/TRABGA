@@ -130,7 +130,8 @@ def opcao_1():
   global codv9 
   global maiorcompra
   global maiorcomprat
-
+  global vvenda
+  vvenda = 0
   print('\nOpção escolhida: 1\n')
   nomec = input('insira o nome do cliente: ')
   print('O que será comprado?')
