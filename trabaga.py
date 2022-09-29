@@ -83,6 +83,8 @@ est9 = 3
 maiorcomprat = str('')
 maiorcompra = int(0)
 
+vtotal = 0
+
 print('Inicializando sistema...')
 nome = input('Boa noite.\nPor favor, insira seu nome: ')
 
@@ -118,7 +120,6 @@ def opcao_1():
   global est7
   global est8
   global est9
-  global vvenda
   global codv1 
   global codv2 
   global codv3 
@@ -131,6 +132,7 @@ def opcao_1():
   global maiorcompra
   global maiorcomprat
   global vvenda
+  global vtotal
   vvenda = 0
   print('\nOpção escolhida: 1\n')
   nomec = input('insira o nome do cliente: ')
@@ -220,6 +222,8 @@ def opcao_1():
   if maiorcompra < int(vvenda):
     maiorcompra = vvenda
     maiorcomprat = compratotal
+  vtotal += vvenda
+
   print('Calças em Estoque: {}'.format(est1))
   print('Camisa em Estoque: {}'.format(est2))
   print('Bermudas em Estoque: {}'.format(est3))
@@ -369,46 +373,47 @@ def opcao_4():
   global codv7 
   global codv8 
   global codv9 
+  global vtotal
   print('\nOpção escolhida: 4\n')
   print('\nItens comprados:\n')
-  if vvenda != 0:
-    comp1=float(codv1)
+  if vtotal != 0:
+    comp1=int(codv1)
     print('\n{} calças foram compradas.'.format(comp1))
-    print('\nValor unitário R$112,00')
-    print('\nValor total de calças compradas:{}'.format(float(112*comp1)))
-    comp2=float(codv2)
+    print('Valor unitário R$112,00')
+    print('Valor total de calças compradas: R${}'.format(float(112*comp1)))
+    comp2=int(codv2)
     print('\n{} camisas foram compradas.'.format(comp2))
-    print('\nValor unitário R$95,00')
-    print('\nValor total de camisas compradas:{}'.format(float(95*comp2)))
-    comp3=float(codv3)
+    print('Valor unitário R$95,00')
+    print('Valor total de camisas compradas: R${}'.format(float(95*comp2)))
+    comp3=int(codv3)
     print('\n{} bermudas foram compradas.'.format(comp3))
-    print('\nValor unitário R$49.90')
-    print('\nValor total de bermudas compradas:{}'.format(float(49.90*comp3)))
-    comp4=float(codv4)
+    print('Valor unitário R$49.90')
+    print('Valor total de bermudas compradas: R${}'.format(float(49.90*comp3)))
+    comp4=int(codv4)
     print('\n{} saias foram compradas.'.format(comp4))
-    print('\nValor unitário R$169,00')
-    print('\nValor total de saias compradas:{}'.format(float(169*comp4)))
-    comp5=float(codv5)
+    print('Valor unitário R$169,00')
+    print('Valor total de saias compradas: R${}'.format(float(169*comp4)))
+    comp5=int(codv5)
     print('\n{} blusas foram compradas.'.format(comp5))
-    print('\nValor unitário R$129,00')
-    print('\nValor total de blusas compradas:{}'.format(float(129*comp5)))
-    comp6=float(codv6)
+    print('Valor unitário R$129,00')
+    print('Valor total de blusas compradas: R${}'.format(float(129*comp5)))
+    comp6=int(codv6)
     print('\n{} moletons foram comprados.'.format(comp6))
-    print('\nValor unitário R$135,00')
-    print('\nValor total de moletons compradas:{}'.format(float(135*comp6)))
-    comp7=float(codv7)
+    print('Valor unitário R$135,00')
+    print('Valor total de moletons compradas: R${}'.format(float(135*comp6)))
+    comp7=int(codv7)
     print('\n{} meias foram compradas.'.format(comp7))
-    print('\nValor unitário R$12.99')
-    print('\nValor total de meias compradas:{}'.format(float(12.99*comp7)))
-    comp8=float(codv8)
+    print('Valor unitário R$12.99')
+    print('Valor total de meias compradas: R${}'.format(float(12.99*comp7)))
+    comp8=int(codv8)
     print('\n{} tênis foram comprados.'.format(comp8))
-    print('\nValor unitário R$183,00')
-    print('\nValor total de tênis compradas:{}'.format(float(183*comp8)))
-    comp9=float(codv9)
+    print('Valor unitário R$183,00')
+    print('Valor total de tênis compradas: R${}'.format(float(183*comp8)))
+    comp9=int(codv9)
     print('\n{} botas foram compradas.'.format(comp9))
-    print('\nValor unitário R$219.90')
-    print('\nValor total de botas compradas:{}'.format(float(219.90*comp9)))
-    print('\nValor total comprado:{}\n '.format(vvenda))
+    print('Valor unitário R$219.90')
+    print('Valor total de botas compradas: R${}'.format(float(219.90*comp9)))
+    print('\nValor total comprado: R${}\n '.format(vtotal))
   else:
     print('Nenhuma compra foi realizada.')
     obrigado=print('Obrigado!')
