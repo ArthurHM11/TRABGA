@@ -278,20 +278,39 @@ def opcao_2():
       print('O código de produto não existe.')
   estoquetotal=print('O estoque foi resposto com sucesso.')
   return estoquetotal
-    
-
-
-
-
-
+  
+  
 def opcao_3():
- print('\nOpção escolhida: 3\n')
+  print('\nOpção escolhida: 3\n')
+  global est1
+  global est2
+  global est3
+  global est4
+  global est5
+  global est6
+  global est7
+  global est9
+  print('\nOpção escolhida: 3\n')
+  print('\nCódigo   Produto   Estoque   Valor unitário   Valor total\n')
+  print('\n1 -      Calça       {}       R$ 112,00          R${:2f}   \n'.format(est1, float(est1*112)))
+  print('\n2 -      Camisa      {}       R$ 95,00           R${:2f}   \n'.format(est2, float(est2*95))) 
+  print('\n3 -      Bermuda     {}       R$49,90            R${:2f}   \n'.format(est3, float(est3*49.90)))
+  print('\n4 -      Saia        {}       R$169,00           R${:2f}   \n'.format(est4, float(est4*169)))
+  print('\n5 -      Blusa       {}       R$129,00           R${:2f}   \n'.format(est5, float(est5*129)))
+  print('\n6 -      Moletom     {}       R$135,00           R${:2f}   \n'.format(est6, float(est6*135)))
+  print('\n7 -      Meia        {}       R$12,99            R${:2f}   \n'.format(est7, float(est7*12.99)))
+  print('\n8 -      Tênis       {}       R$183,00           R${:2f}   \n'.format(est8, float(est8*183)))
+  print('\n9 -      Bota        {}       R$219,90           R${:2f}   \n'.format(est9, float(est9*219.90)))
+  obrigado=print('Obrigado!')
+  return obrigado
+  print('Código Produto Estoque Valor\n1 - Calça {} R$ 112,00\n2 - Camisa {} R$ 95,00\n3 - Bermuda {} R$ 49,90\n4 - Saia {} R$ 169,00\n5 - Blusa {} R$ 120,00\n6 - Moletom {} R$ 135,00\n7 - Meia {} R$ 12,99\n8 - Tênis {} R$ 183,00\n9 - Bota {} R$ 219,90\n10 - Terminar compra.'.format(est1,est2,est3,est4,est5,est6,est7,est8,est9))
+
 
 
 def opcao_4():
   print('\nOpção escolhida: 4\n')
 
-
+ 
 def opcao_5():
   print('\nOpção escolhida: 5\n')
 
