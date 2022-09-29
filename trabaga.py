@@ -36,7 +36,27 @@
 import os
 
 
-valorvenda = 0
+vvenda = 0
+
+code1=0
+code2=0
+code3=0
+code4=0
+code5=0
+code6=0
+code7=0
+code8=0
+code9=0
+
+codv1 = 0
+codv2 = 0
+codv3 = 0
+codv4 = 0
+codv5 = 0
+codv6 = 0
+codv7 = 0
+codv8 = 0
+codv9 = 0
 
 
 cod1p = 112.00
@@ -96,20 +116,20 @@ def opcao_1():
   global est7
   global est8
   global est9
+  global vvenda
+  global codv1 
+  global codv2 
+  global codv3 
+  global codv4 
+  global codv5 
+  global codv6 
+  global codv7 
+  global codv8 
+  global codv9 
   print('\nOpção escolhida: 1\n')
   nomec = input('insira o nome do cliente: ')
   print('O que será comprado?')
   print('Código Produto Estoque Valor\n1 - Calça {} R$ 112,00\n2 - Camisa {} R$ 95,00\n3 - Bermuda {} R$ 49,90\n4 - Saia {} R$ 169,00\n5 - Blusa {} R$ 120,00\n6 - Moletom {} R$ 135,00\n7 - Meia {} R$ 12,99\n8 - Tênis {} R$ 183,00\n9 - Bota {} R$ 219,90\n10 - Terminar compra.'.format(est1,est2,est3,est4,est5,est6,est7,est8,est9))
-  codv1 = 0
-  codv2 = 0
-  codv3 = 0
-  codv4 = 0
-  codv5 = 0
-  codv6 = 0
-  codv7 = 0
-  codv8 = 0
-  codv9 = 0
-  vvenda = 0
   codp = '0'
   while(codp != '10'):
     codp = input('Insira o código do produto: ')
@@ -212,18 +232,18 @@ def opcao_2():
   global est7
   global est8
   global est9
+  global code1
+  global code2
+  global code3
+  global code4
+  global code5
+  global code6
+  global code7
+  global code8
+  global code9
   print('\nOpção escolhida: 2\n')
   print('\nO que será reposto?\n')
   print('Código Produto Estoque Valor\n1 - Calça {} R$ 112,00\n2 - Camisa {} R$ 95,00\n3 - Bermuda {} R$ 49,90\n4 - Saia {} R$ 169,00\n5 - Blusa {} R$ 120,00\n6 - Moletom {} R$ 135,00\n7 - Meia {} R$ 12,99\n8 - Tênis {} R$ 183,00\n9 - Bota {} R$ 219,90\n10 - Terminar compra.'.format(est1,est2,est3,est4,est5,est6,est7,est8,est9))
-  code1=0
-  code2=0
-  code3=0
-  code4=0
-  code5=0
-  code6=0
-  code7=0
-  code8=0
-  code9=0
   codr='0'
   while(codr!='10'):
     codr= input('\nInsira o código de produto :\n')
@@ -281,7 +301,6 @@ def opcao_2():
   
   
 def opcao_3():
-  print('\nOpção escolhida: 3\n')
   global est1
   global est2
   global est3
@@ -292,25 +311,98 @@ def opcao_3():
   global est9
   print('\nOpção escolhida: 3\n')
   print('\nCódigo   Produto   Estoque   Valor unitário   Valor total\n')
-  print('\n1 -      Calça       {}       R$ 112,00          R${:2f}   \n'.format(est1, float(est1*112)))
-  print('\n2 -      Camisa      {}       R$ 95,00           R${:2f}   \n'.format(est2, float(est2*95))) 
-  print('\n3 -      Bermuda     {}       R$49,90            R${:2f}   \n'.format(est3, float(est3*49.90)))
-  print('\n4 -      Saia        {}       R$169,00           R${:2f}   \n'.format(est4, float(est4*169)))
-  print('\n5 -      Blusa       {}       R$129,00           R${:2f}   \n'.format(est5, float(est5*129)))
-  print('\n6 -      Moletom     {}       R$135,00           R${:2f}   \n'.format(est6, float(est6*135)))
-  print('\n7 -      Meia        {}       R$12,99            R${:2f}   \n'.format(est7, float(est7*12.99)))
-  print('\n8 -      Tênis       {}       R$183,00           R${:2f}   \n'.format(est8, float(est8*183)))
-  print('\n9 -      Bota        {}       R$219,90           R${:2f}   \n'.format(est9, float(est9*219.90)))
+  print('\n1 -      Calça       {}       R$ 112,00          R${:.2f}   \n'.format(est1, float(est1*112)))
+  print('\n2 -      Camisa      {}       R$ 95,00           R${:.2f}   \n'.format(est2, float(est2*95))) 
+  print('\n3 -      Bermuda     {}       R$49,90            R${:.2f}   \n'.format(est3, float(est3*49.90)))
+  print('\n4 -      Saia        {}       R$169,00           R${:.2f}   \n'.format(est4, float(est4*169)))
+  print('\n5 -      Blusa       {}       R$129,00           R${:.2f}   \n'.format(est5, float(est5*129)))
+  print('\n6 -      Moletom     {}       R$135,00           R${:.2f}   \n'.format(est6, float(est6*135)))
+  print('\n7 -      Meia        {}       R$12,99            R${:.2f}   \n'.format(est7, float(est7*12.99)))
+  print('\n8 -      Tênis       {}       R$183,00           R${:.2f}   \n'.format(est8, float(est8*183)))
+  print('\n9 -      Bota        {}       R$219,90           R${:.2f}   \n'.format(est9, float(est9*219.90)))
   obrigado=print('Obrigado!')
   return obrigado
-  print('Código Produto Estoque Valor\n1 - Calça {} R$ 112,00\n2 - Camisa {} R$ 95,00\n3 - Bermuda {} R$ 49,90\n4 - Saia {} R$ 169,00\n5 - Blusa {} R$ 120,00\n6 - Moletom {} R$ 135,00\n7 - Meia {} R$ 12,99\n8 - Tênis {} R$ 183,00\n9 - Bota {} R$ 219,90\n10 - Terminar compra.'.format(est1,est2,est3,est4,est5,est6,est7,est8,est9))
+  
 
 
 
 def opcao_4():
+  global cod1p
+  global cod2p
+  global cod3p
+  global cod4p
+  global cod5p
+  global cod6p
+  global cod7p
+  global cod8p
+  global cod9p
+  global est1
+  global est2
+  global est3
+  global est4
+  global est5
+  global est6
+  global est7
+  global est8
+  global est9
+  global vvenda
+  global codv1 
+  global codv2 
+  global codv3 
+  global codv4 
+  global codv5 
+  global codv6 
+  global codv7 
+  global codv8 
+  global codv9 
   print('\nOpção escolhida: 4\n')
+  print('\nItens comprados:\n')
+  if vvenda != 0:
+    comp1=float(codv1)
+    print('\n{} calças foram compradas.'.format(comp1))
+    print('\nValor unitário R$112,00')
+    print('\nValor total de calças compradas:{}'.format(float(112*comp1)))
+    comp2=float(codv2)
+    print('\n{} camisas foram compradas.'.format(comp2))
+    print('\nValor unitário R$95,00')
+    print('\nValor total de camisas compradas:{}'.format(float(95*comp2)))
+    comp3=float(codv3)
+    print('\n{} bermudas foram compradas.'.format(comp3))
+    print('\nValor unitário R$49.90')
+    print('\nValor total de bermudas compradas:{}'.format(float(49.90*comp3)))
+    comp4=float(codv4)
+    print('\n{} saias foram compradas.'.format(comp4))
+    print('\nValor unitário R$169,00')
+    print('\nValor total de saias compradas:{}'.format(float(169*comp4)))
+    comp5=float(codv5)
+    print('\n{} blusas foram compradas.'.format(comp5))
+    print('\nValor unitário R$129,00')
+    print('\nValor total de blusas compradas:{}'.format(float(129*comp5)))
+    comp6=float(codv6)
+    print('\n{} moletons foram comprados.'.format(comp6))
+    print('\nValor unitário R$135,00')
+    print('\nValor total de moletons compradas:{}'.format(float(135*comp6)))
+    comp7=float(codv7)
+    print('\n{} meias foram compradas.'.format(comp7))
+    print('\nValor unitário R$12.99')
+    print('\nValor total de meias compradas:{}'.format(float(12.99*comp7)))
+    comp8=float(codv8)
+    print('\n{} tênis foram comprados.'.format(comp8))
+    print('\nValor unitário R$183,00')
+    print('\nValor total de tênis compradas:{}'.format(float(183*comp8)))
+    comp9=float(codv9)
+    print('\n{} botas foram compradas.'.format(comp9))
+    print('\nValor unitário R$219.90')
+    print('\nValor total de botas compradas:{}'.format(float(219.90*comp9)))
+    print('\nValor total comprado:{}\n '.format(vvenda))
+  else:
+    print('Nenhuma compra foi realizada.')
+    obrigado=print('Obrigado!')
+    return obrigado
+  
 
- 
+  
+  
 def opcao_5():
   print('\nOpção escolhida: 5\n')
 
@@ -326,9 +418,9 @@ while(escolha != '9'):
     opcao_2()
   elif escolha == '3':
     opcao_3()
-  elif escolha == '3':
+  elif escolha == '4':
     opcao_4()
-  elif escolha == '3':
+  elif escolha == '5':
     opcao_5()
   elif escolha == '9':
     print('\nSaindo...\n')
