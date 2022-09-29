@@ -424,7 +424,12 @@ def opcao_4():
   
 def opcao_5():
   print('\nOpção escolhida: 5\n')
-  print(maiorcomprat)
+  if maiorcompra != 0:
+    print(maiorcomprat)
+  else:
+    print('Nenhuma compra foi realizada.')
+    print('Obrigado!')
+
 
 
 
