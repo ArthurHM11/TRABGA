@@ -80,6 +80,8 @@ est7 = 17
 est8 = 8
 est9 = 3
 
+maiorcomprat = str('')
+maiorcompra = int(0)
 
 print('Inicializando sistema...')
 nome = input('Boa noite.\nPor favor, insira seu nome: ')
@@ -126,6 +128,9 @@ def opcao_1():
   global codv7 
   global codv8 
   global codv9 
+  global maiorcompra
+  global maiorcomprat
+
   print('\nOpção escolhida: 1\n')
   nomec = input('insira o nome do cliente: ')
   print('O que será comprado?')
@@ -209,7 +214,11 @@ def opcao_1():
       print('\nFinalizando Compra...\n')
     else:
       print('\nOpção desconhecida!\n')
-  compratotal = print('Total da venda:\nCliente: {}\nValor Total R${:.2f}'.format(nomec,vvenda))
+  compratotal = str('Total da venda:\nCliente: {}\nValor Total R${:.2f}'.format(nomec,vvenda))
+  print(compratotal)
+  if maiorcompra < int(vvenda):
+    maiorcompra = vvenda
+    maiorcomprat = compratotal
   print('Calças em Estoque: {}'.format(est1))
   print('Camisa em Estoque: {}'.format(est2))
   print('Bermudas em Estoque: {}'.format(est3))
@@ -298,8 +307,12 @@ def opcao_2():
       print('O código de produto não existe.')
   estoquetotal=print('O estoque foi resposto com sucesso.')
   return estoquetotal
-  
-  
+    
+
+
+
+
+
 def opcao_3():
   global est1
   global est2
@@ -405,6 +418,7 @@ def opcao_4():
   
 def opcao_5():
   print('\nOpção escolhida: 5\n')
+  print(maiorcomprat)
 
 
 
