@@ -69,6 +69,17 @@ cod7p = 12.99
 cod8p = 183.00
 cod9p = 219.00
 
+n1max = 0
+n2max = 0
+n3max = 0
+n4max = 0
+n5max = 0
+n6max = 0
+n7max = 0
+n8max = 0
+n9max = 0
+
+
 
 est1 = 20
 est2 = 18
@@ -82,6 +93,7 @@ est9 = 3
 
 maiorcomprat = str('')
 maiorcompra = int(0)
+maiorcomprai = str('')
 
 vtotal = 0
 
@@ -131,8 +143,28 @@ def opcao_1():
   global codv9 
   global maiorcompra
   global maiorcomprat
+  global maiorcomprai
   global vvenda
   global vtotal
+  n1 = 0
+  n2 = 0
+  n3 = 0
+  n4 = 0
+  n5 = 0
+  n6 = 0
+  n7 = 0
+  n8 = 0
+  n9 = 0
+  n1max = 0
+  n2max = 0
+  n3max = 0
+  n4max = 0
+  n5max = 0
+  n6max = 0
+  n7max = 0
+  n8max = 0
+  n9max = 0
+
   vvenda = 0
   print('\nOpção escolhida: 1\n')
   nomec = input('insira o nome do cliente: ')
@@ -143,9 +175,11 @@ def opcao_1():
     codp = input('Insira o código do produto: ')
     if codp == '1':
       n1=int(input('Informe a quantidade a ser comprada: '))
+      if n1 > n1max:
+          n1max = n1
       if est1 > n1:
         v1=(cod1p*n1)
-        r1=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v1))
+        r1=input('\nO valor total do(s) item(s) é R${}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v1))
         if r1 == '1':
           vvenda += (cod1p*n1)
           codv1 += n1
@@ -157,9 +191,11 @@ def opcao_1():
         print('Não há produtos em estoque o suficiente.')
     elif codp == '2':
       n2=int(input('Informe a quantidade a ser comprada: '))
+      if n2 > n2max:
+          n2max = n2
       if est2 > n2:
         v2=(cod2p*n2)
-        r2=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v2))
+        r2=input('\nO valor total do(s) item(s) é R${}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v2))
         if r2 == '1':
           vvenda += (cod2p*n2)
           codv2 += n2
@@ -171,9 +207,11 @@ def opcao_1():
         print('Não há produtos em estoque o suficiente.')
     elif codp == '3':
       n3=int(input('Informe a quantidade a ser comprada: '))
+      if n3 > n3max:
+          n3max = n3
       if est3 > n3:
         v3=(cod3p*n3)
-        r3=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v3))
+        r3=input('\nO valor total do(s) item(s) é R${}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v3))
         if r3 == '1':
           vvenda += (cod3p*n3)
           codv3 += n3
@@ -185,9 +223,11 @@ def opcao_1():
         print('Não há produtos em estoque o suficiente.')
     elif codp == '4':
       n4=int(input('Informe a quantidade a ser comprada: '))
+      if n4 > n4max:
+          n4max = n4
       if est4 > n4:
         v4=(cod4p*n4)
-        r4=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v4))
+        r4=input('\nO valor total do(s) item(s) é R${}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v4))
         if r4 == '1':
           vvenda += (cod4p*n4)
           codv4 += n4
@@ -199,9 +239,11 @@ def opcao_1():
         print('Não há produtos em estoque o suficiente.')
     elif codp == '5':
       n5=int(input('Informe a quantidade a ser comprada: '))
+      if n5 > n5max:
+          n5max = n5
       if est5 > n5:
         v5=(cod5p*n5)
-        r5=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v5))
+        r5=input('\nO valor total do(s) item(s) é R${}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v5))
         if r5 == '1':
           vvenda += (cod5p*n5)
           codv5 += n5
@@ -213,9 +255,11 @@ def opcao_1():
         print('Não há produtos em estoque o suficiente.')
     elif codp == '6':
       n6=int(input('Informe a quantidade a ser comprada: '))
-      if est6 > n6:
+      if n6 > n6max:
+          n6max = n6
+      elif est6 > n6:
         v6=(cod6p*n6)
-        r6=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v6))
+        r6=input('\nO valor total do(s) item(s) é R${}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v6))
         if r6 == '1':
           vvenda += (cod6p*n6)
           codv6 += n6
@@ -227,9 +271,11 @@ def opcao_1():
         print('Não há produtos em estoque o suficiente.')
     elif codp == '7':
       n7=int(input('Informe a quantidade a ser comprada: '))
+      if n7 > n7max:
+          n7max = n7
       if est7 > n7:
         v7=(cod7p*n7)
-        r7=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v7))
+        r7=input('\nO valor total do(s) item(s) é R${}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v7))
         if r7 == '1': 
           vvenda += (cod7p*n7)
           codv7 += n7
@@ -241,9 +287,11 @@ def opcao_1():
         print('Não há produtos em estoque o suficiente.')
     elif codp == '8':
       n8=int(input('Informe a quantidade a ser comprada: '))
+      if n8 > n8max:
+          n8max = n8
       if est8 > n8:
         v8=(cod8p*n8)
-        r8=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v8))
+        r8=input('\nO valor total do(s) item(s) é R${}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v8))
         if r8 == '1':
           vvenda += (cod8p*n8)
           codv8 += n8
@@ -255,9 +303,11 @@ def opcao_1():
         print('Não há produtos em estoque o suficiente.')
     elif codp == '9':
       n9=int(input('Informe a quantidade a ser comprada: '))
+      if n9 > n9max:
+          n9max = n9
       if est9 > n9:
         v9=(cod9p*n9)
-        r9=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v9))
+        r9=input('\nO valor total do(s) item(s) é R${}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v9))
         if r9 =='1':
           vvenda += (cod9p*n9)
           codv9 += n9
@@ -277,7 +327,7 @@ def opcao_1():
     maiorcompra = vvenda
     maiorcomprat = compratotal
   vtotal += vvenda
-
+  maiorcomprai = ('Código Produto Estoque Valor\n1 - Calça {} R$ 112,00\n2 - Camisa {} R$ 95,00\n3 - Bermuda {} R$ 49,90\n4 - Saia {} R$ 169,00\n5 - Blusa {} R$ 120,00\n6 - Moletom {} R$ 135,00\n7 - Meia {} R$ 12,99\n8 - Tênis {} R$ 183,00\n9 - Bota {} R$ 219,90\n'.format(n1max,n2max,n3max,n4max,n5max,n6max,n7max,n8max,n9max))
   print('Calças em Estoque: {}'.format(est1))
   print('Camisa em Estoque: {}'.format(est2))
   print('Bermudas em Estoque: {}'.format(est3))
@@ -480,6 +530,7 @@ def opcao_5():
   print('\nOpção escolhida: 5\n')
   if maiorcompra != 0:
     print(maiorcomprat)
+    print(maiorcomprai)
   else:
     print('Nenhuma compra foi realizada.')
     print('Obrigado!')
