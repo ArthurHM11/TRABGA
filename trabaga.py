@@ -60,6 +60,8 @@ est7 = 17
 est8 = 8
 est9 = 3
 
+maiorcomprat = str('')
+maiorcompra = int(0)
 
 print('Inicializando sistema...')
 nome = input('Boa noite.\nPor favor, insira seu nome: ')
@@ -96,6 +98,8 @@ def opcao_1():
   global est7
   global est8
   global est9
+  global maiorcompra
+  global maiorcomprat
   print('\nOpção escolhida: 1\n')
   nomec = input('insira o nome do cliente: ')
   print('O que será comprado?')
@@ -189,7 +193,11 @@ def opcao_1():
       print('\nFinalizando Compra...\n')
     else:
       print('\nOpção desconhecida!\n')
-  compratotal = print('Total da venda:\nCliente: {}\nValor Total R${:.2f}'.format(nomec,vvenda))
+  compratotal = str('Total da venda:\nCliente: {}\nValor Total R${:.2f}'.format(nomec,vvenda))
+  print(compratotal)
+  if maiorcompra < int(vvenda):
+    maiorcompra = vvenda
+    maiorcomprat = compratotal
   print('Calças em Estoque: {}'.format(est1))
   print('Camisa em Estoque: {}'.format(est2))
   print('Bermudas em Estoque: {}'.format(est3))
@@ -278,8 +286,12 @@ def opcao_2():
       print('O código de produto não existe.')
   estoquetotal=print('O estoque foi resposto com sucesso.')
   return estoquetotal
-  
-  
+    
+
+
+
+
+
 def opcao_3():
   print('\nOpção escolhida: 3\n')
   global est1
@@ -303,16 +315,15 @@ def opcao_3():
   print('\n9 -      Bota        {}       R$219,90           R${:2f}   \n'.format(est9, float(est9*219.90)))
   obrigado=print('Obrigado!')
   return obrigado
-  print('Código Produto Estoque Valor\n1 - Calça {} R$ 112,00\n2 - Camisa {} R$ 95,00\n3 - Bermuda {} R$ 49,90\n4 - Saia {} R$ 169,00\n5 - Blusa {} R$ 120,00\n6 - Moletom {} R$ 135,00\n7 - Meia {} R$ 12,99\n8 - Tênis {} R$ 183,00\n9 - Bota {} R$ 219,90\n10 - Terminar compra.'.format(est1,est2,est3,est4,est5,est6,est7,est8,est9))
-
 
 
 def opcao_4():
   print('\nOpção escolhida: 4\n')
 
- 
+
 def opcao_5():
   print('\nOpção escolhida: 5\n')
+  print(maiorcomprat)
 
 
 
@@ -326,9 +337,9 @@ while(escolha != '9'):
     opcao_2()
   elif escolha == '3':
     opcao_3()
-  elif escolha == '3':
+  elif escolha == '4':
     opcao_4()
-  elif escolha == '3':
+  elif escolha == '5':
     opcao_5()
   elif escolha == '9':
     print('\nSaindo...\n')
