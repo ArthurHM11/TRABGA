@@ -142,75 +142,129 @@ def opcao_1():
   while(codp != '10'):
     codp = input('Insira o código do produto: ')
     if codp == '1':
-      if est1 > 0:
-        vvenda += cod1p
-        codv1 += 1
-        est1 -= 1
-        print('Uma Calça de R$112,00 foi comprada.')
+      n1=int(input('Informe a quantidade a ser comprada: '))
+      if est1 > n1:
+        v1=(cod1p*n1)
+        r1=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v1))
+        if r1 == '1':
+          vvenda += (cod1p*n1)
+          codv1 += n1
+          est1 -= n1
+          print('{} Calça(s) de R$112,00 foi(ram) comprada(s).'.format(n1))
+        else:
+          print('Compra cancelada')
       else:
         print('Não há produtos em estoque o suficiente.')
     elif codp == '2':
-      if est2 > 0:
-        vvenda += cod2p
-        codv2 += 1
-        est2 -= 1
-        print('Uma Camisa de R$95,00 foi comprada.')
+      n2=int(input('Informe a quantidade a ser comprada: '))
+      if est2 > n2:
+        v2=(cod2p*n2)
+        r2=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v2))
+        if r2 == '1':
+          vvenda += (cod2p*n2)
+          codv2 += n2
+          est2 -= n2
+          print('{} Camisa(s) de R$95,00 foi(ram) comprada(s).'.format(n2))
+        else:
+          print('Compra cancelada')
       else:
         print('Não há produtos em estoque o suficiente.')
     elif codp == '3':
-      if est3 > 0:
-        vvenda += cod3p
-        codv3 += 1
-        est3 -= 1
-        print('Uma Bermuda de R$49,90 foi comprada.')
+      n3=int(input('Informe a quantidade a ser comprada: '))
+      if est3 > n3:
+        v3=(cod3p*n3)
+        r3=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v3))
+        if r3 == '1':
+          vvenda += (cod3p*n3)
+          codv3 += n3
+          est3 -= n3
+          print('{} Bermuda(s) de R$49,90 foi(ram) comprada(s).'.format(n3))
+        else:
+          print('Compra cancelada')
       else:
         print('Não há produtos em estoque o suficiente.')
     elif codp == '4':
-      if est4 > 0:
-        vvenda += cod4p
-        codv4 += 1
-        est4 -= 1
-        print('Uma Saia de R$169,00 foi comprada.')
+      n4=int(input('Informe a quantidade a ser comprada: '))
+      if est4 > n4:
+        v4=(cod4p*n4)
+        r4=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v4))
+        if r4 == '1':
+          vvenda += (cod4p*n4)
+          codv4 += n4
+          est4 -= n4
+          print('{} Saia(s) de R$169,00 foi(ram) comprada(s).'.format(n4))
+        else:
+          print('Compra cancelada')
       else:
         print('Não há produtos em estoque o suficiente.')
     elif codp == '5':
-      if est5 > 0:
-        vvenda += cod5p
-        codv5 += 1
-        est5 -= 1
-        print('Uma Blusa de R$120,00 foi comprada.')
+      n5=int(input('Informe a quantidade a ser comprada: '))
+      if est5 > n5:
+        v5=(cod5p*n5)
+        r5=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v5))
+        if r5 == '1':
+          vvenda += (cod5p*n5)
+          codv5 += n5
+          est5 -= n5
+          print('{} Blusa(s) de R$120,00 foi(ram) comprada(s).'.format(n5))
+        else:
+          print('Compra cancelada')
       else:
         print('Não há produtos em estoque o suficiente.')
     elif codp == '6':
-      if est6 > 0:
-        vvenda += cod6p
-        codv6 += 1
-        est6 -= 1
-        print('Um Moletom de R$135,00 foi comprado.')
+      n6=int(input('Informe a quantidade a ser comprada: '))
+      if est6 > n6:
+        v6=(cod6p*n6)
+        r6=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v6))
+        if r6 == '1':
+          vvenda += (cod6p*n6)
+          codv6 += n6
+          est6 -= n6
+          print('{} Moletom(s) de R$135,00 foi(ram) comprado(s).'.format(n6))
+        else:
+          print('Compra cancelada')  
       else:
         print('Não há produtos em estoque o suficiente.')
     elif codp == '7':
-      if est7 > 0:
-        vvenda += cod7p
-        codv7 += 1
-        est7 -= 1
-        print('Uma Meia de R$12,99 foi comprada.')
+      n7=int(input('Informe a quantidade a ser comprada: '))
+      if est7 > n7:
+        v7=(cod7p*n7)
+        r7=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v7))
+        if r7 == '1': 
+          vvenda += (cod7p*n7)
+          codv7 += n7
+          est7 -= n7
+          print('{} Meia(s) de R$12,99 foi(ram) comprada(s).'.format(n7))
+        else:
+          print('Compra cancelada')
       else:
         print('Não há produtos em estoque o suficiente.')
     elif codp == '8':
-      if est8 > 0:
-        vvenda += cod8p
-        codv8 += 1
-        est8 -= 1
-        print('Um Tenis de R$183,00 foi comprado.')
+      n8=int(input('Informe a quantidade a ser comprada: '))
+      if est8 > n8:
+        v8=(cod8p*n8)
+        r8=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v8))
+        if r8 == '1':
+          vvenda += (cod8p*n8)
+          codv8 += n8
+          est8 -= n8
+          print('{} Tenis de R$183,00 foi(ram) comprado(s).'.format(n8))
+        else:
+            print('Compra cancelada')
       else:
         print('Não há produtos em estoque o suficiente.')
     elif codp == '9':
-      if est9 > 0:
-        vvenda += cod9p
-        codv9 += 1
-        est9 -= 1
-        print('Uma Bota de R$219,00 foi comprada.')
+      n9=int(input('Informe a quantidade a ser comprada: '))
+      if est9 > n9:
+        v9=(cod9p*n9)
+        r9=input('\nO valor total do(s) item(s) é :{}.  Deseja continuar?  1-Sim, 2-Não\n'.format(v9))
+        if r9 =='1':
+          vvenda += (cod9p*n9)
+          codv9 += n9
+          est9 -= n9
+          print('{} Bota(s) de R$219,00 foi(ram) comprada(s).'.format(n9))
+        else:
+          print('Compra cancelada')
       else:
         print('Não há produtos em estoque o suficiente.')
     elif codp == '10':
