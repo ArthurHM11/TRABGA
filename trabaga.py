@@ -52,3 +52,7 @@
 
 CustoPorKMrodado = float(input('Digite o custo por KM rodado em R$: '))
 
+if CustoPorKMrodado >= 0:
+  print('Valor aceito!')
+elif CustoPorKMrodado < 0:
+  print('O valor deverá ser maior ou igual a zero')
