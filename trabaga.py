@@ -50,9 +50,11 @@
 # 5. Sair: Permite que o usuário saia do programa.
 
 
+# Bagulho 1
 CustoPorKMrodado = float(input('Digite o custo por KM rodado em R$: '))
 
 if CustoPorKMrodado >= 0:
   print('Valor aceito!')
 elif CustoPorKMrodado < 0:
-  print('O valor deverá ser maior ou igual a zero')
+  print('O valor deverá ser maior ou igual a zero!')
+else: print('O valor foi aceito!')
