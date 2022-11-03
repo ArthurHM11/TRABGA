@@ -48,3 +48,7 @@
 # km por dia;
 
 # 5. Sair: Permite que o usuário saia do programa.
+
+
+CustoPorKMrodado = float(input('Digite o custo por KM rodado em R$: '))
+
