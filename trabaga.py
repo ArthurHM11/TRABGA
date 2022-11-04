@@ -57,4 +57,4 @@ if CustoPorKMrodado >= 0:
   print('Valor aceito!')
 elif CustoPorKMrodado < 0:
   print('O valor deverá ser maior ou igual a zero!')
-else: print('O valor foi aceito!')
+else: print('Algo está errado!')
