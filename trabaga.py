@@ -86,8 +86,7 @@ c2 = input('Informe uma cidade de destino: ')
 while c1 != 'in' 'arquivo' or c2 != 'in' 'arquivo' or c1 == c2:
   print('Cidade não encontrada ou origem e destinos iguais.')
   print('Por favor, insira uma nova cidade')
-  
-  print('#calcular e mostrar na tela a distância rodoviária entre elas e o custo total do trecho#.')
+  print('Calcular e mostrar na tela a distância rodoviária entre elas e o custo total do trecho.')
 
 
 
@@ -132,4 +131,3 @@ def menu():
   print('3 - Consultar Melhor Rota')  ('Bagulho 3')
   print('4 - Consultar Rota Completa')  ('Bagulho 4')
   print('5 - Fechar o Sistema')  ('Bagulho 5')
-
