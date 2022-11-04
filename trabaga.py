@@ -49,6 +49,7 @@
 
 # 5. Sair: Permite que o usuário saia do programa.
 
+import os
 
 # Bagulho 1
 CustoPorKMrodado = float(input('Digite o custo por KM rodado em R$: '))
@@ -82,3 +83,47 @@ c1 = input('Informe uma cidade de origem: ')
 c2 = input('Informe uma cidade de destino: ')
 if c1 is not 'in' 'arquivo' or c2 is not 'in' 'arquivo':
     print('Cidade não encontrada')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Bagulho Menu Geralzão 
+def menu():
+  os.system('cls' if os.name == 'nt' else 'clear') # Limpa a tela - Win/Linux
+  print('\n..:: Sistema ::..\n')
+  print('1 - Custo por KM rodado')  ('Bagulho 1')
+  print('2 - Consulatar Trecho')  ('Bagulho 2')
+  print('3 - Consultar Melhor Rota')  ('Bagulho 3')
+  print('4 - Consultar Rota Completa')  ('Bagulho 4')
+  print('5 - Fechar o Sistema')  ('Bagulho 5')
