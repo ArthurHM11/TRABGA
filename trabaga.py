@@ -57,7 +57,4 @@ if CustoPorKMrodado >= 0:
   print('Valor aceito!')
 elif CustoPorKMrodado < 0:
   print('O valor deverá ser maior ou igual a zero!')
-elif CustoPorKMrodado >= 'A' and 'Z':
-  print('Não pode ser letras, apenas números maiores que zero')
-
 else: print('Algo está errado!')
