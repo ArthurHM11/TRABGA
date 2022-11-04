@@ -68,18 +68,6 @@ else: print('Algo está errado!')
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 # Bagulho 2
 c1 = input('Informe uma cidade de origem: ')
 c2 = input('Informe uma cidade de destino: ')
@@ -87,33 +75,6 @@ while c1 != 'in' 'arquivo' or c2 != 'in' 'arquivo' or c1 == c2:
   print('Cidade não encontrada ou origem e destinos iguais.')
   print('Por favor, insira uma nova cidade')
   print('Calcular e mostrar na tela a distância rodoviária entre elas e o custo total do trecho.')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
