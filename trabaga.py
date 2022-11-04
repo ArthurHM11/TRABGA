@@ -58,3 +58,7 @@ if CustoPorKMrodado >= 0:
 elif CustoPorKMrodado < 0:
   print('O valor deverá ser maior ou igual a zero!')
 else: print('Algo está errado!')
+
+oi
+
+
