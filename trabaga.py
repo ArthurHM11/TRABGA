@@ -77,9 +77,4 @@ else: print('Algo está errado!')
 
 
 
-# Bagulho 2
-c1 = input('Informe uma cidade de origem: ')
-c2 = input('Informe uma cidade de destino: ')
-if c1 is not 'in' 'arquivo' or c2 is not 'in' 'arquivo':
-    print('Cidade não encontrada')
-czcxzc
+
