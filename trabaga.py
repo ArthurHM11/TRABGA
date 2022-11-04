@@ -58,3 +58,27 @@ if CustoPorKMrodado >= 0:
 elif CustoPorKMrodado < 0:
   print('O valor deverá ser maior ou igual a zero!')
 else: print('Algo está errado!')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Bagulho 2
+c1 = input('Informe uma cidade de origem: ')
+c2 = input('Informe uma cidade de destino: ')
+if c1 is not 'in' 'arquivo' or c2 is not 'in' 'arquivo':
+    print('Cidade não encontrada')
