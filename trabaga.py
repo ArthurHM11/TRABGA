@@ -81,8 +81,6 @@ while c1 != 'in' 'arquivo' or c2 != 'in' 'arquivo' or c1 == c2:
 
 
 
-
-
 # Bagulho Menu Geralzão 
 def menu():
   os.system('cls' if os.name == 'nt' else 'clear') # Limpa a tela - Win/Linux
